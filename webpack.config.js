@@ -8,11 +8,12 @@ module.exports = {
     // 번들된 파일 이름
     filename: "bundle.js",
     // 파일이 저장될 위치
-    path: path.resolve(__dirname, "dist"),
+    // path: path.resolve(__dirname, "dist"),
+    publicPath: "/dist/",
     // dist 폴더 clean
     clean: true,
   },
-  devtool: "inline-source-map",
+  devtool: "source-map",
   // 모듈 처리 방식
   module: {
     rules: [
